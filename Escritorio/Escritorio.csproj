@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{44A11868-5ED0-4265-9F68-25B2ACDEE925}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Escritorio</RootNamespace>
+    <AssemblyName>Escritorio</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ABMAsistencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABMAsistencia.Designer.cs">
+      <DependentUpon>ABMAsistencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABMExpulsados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABMExpulsados.Designer.cs">
+      <DependentUpon>ABMExpulsados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABMGoles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABMGoles.Designer.cs">
+      <DependentUpon>ABMGoles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABMJugadores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABMJugadores.Designer.cs">
+      <DependentUpon>ABMJugadores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABMPartidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABMPartidos.Designer.cs">
+      <DependentUpon>ABMPartidos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationForm.Designer.cs">
+      <DependentUpon>ApplicationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Jugadores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Jugadores.Designer.cs">
+      <DependentUpon>Jugadores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Partidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Partidos.Designer.cs">
+      <DependentUpon>Partidos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ABMAsistencia.resx">
+      <DependentUpon>ABMAsistencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABMExpulsados.resx">
+      <DependentUpon>ABMExpulsados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABMGoles.resx">
+      <DependentUpon>ABMGoles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABMJugadores.resx">
+      <DependentUpon>ABMJugadores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABMPartidos.resx">
+      <DependentUpon>ABMPartidos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Jugadores.resx">
+      <DependentUpon>Jugadores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Partidos.resx">
+      <DependentUpon>Partidos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Entidades\Entidades.csproj">
+      <Project>{1b5025e8-01ea-4e05-929c-070e1d7a6910}</Project>
+      <Name>Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Negocio\Negocio.csproj">
+      <Project>{6d5eead7-2cc2-444d-aa74-5bf014222d19}</Project>
+      <Name>Negocio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Fotos\Depor\1479369_10208293182397918_4394610072441585481_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Fotos\Depor\11751454_10206898681803306_6608234222008946178_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Fotos\Depor\11796232_10206898696803681_5250609432543089857_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Fotos\Depor\11800588_10206898208751480_2441274033738520177_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Fotos\Depor\11811495_10206898279833257_5553956894357836952_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Fotos\Depor\11846618_10206957642157278_5463893793855878574_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Fotos\Depor\13495030_10209793829633161_6030200420913551275_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Fotos\Depor\13907083_10210157740490705_2514463545021099040_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Fotos\Depor\14925254_10211015957065583_155059397663297920_n.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
